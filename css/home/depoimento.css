@@ -24,20 +24,21 @@ background: url("../../img/dec/bottom-right-p.svg") no-repeat
   margin-bottom: 32px;
   position: relative;
 }
-.depoimento p::before{
-  content: "“";
+.depoimento p::before,
+.depoimento p::after {
   font-size: 5rem;
   color: var(--cor-p2);
   position: absolute;
+}
+
+.depoimento p::before {
+  content: "“";
   left: -50px;
   top: -20px;
 }
-.depoimento p::after{
+
+.depoimento p::after {
   content: "”";
-  font-size: 5rem;
-  color: var(--cor-p2);
-  position: absolute;
-  bottom: -60px;
 }
 @media (min-width: 1200px){
   .depoimento img{
@@ -54,7 +55,7 @@ background: url("../../img/dec/bottom-right-p.svg") no-repeat
   }
   .depoimento-conteudo{
     padding: 40px 20px;
-    justify-self: center;
+    margin: auto;
   }
 }
 
