@@ -79,9 +79,6 @@
   box-shadow: 0 0 0 2px var(--cor-p1);
   border-color: var(--cor-12);
 }
-.orcamento-produto label span{
-  display: none;
-}
 .orcamento-produto label:checked + label span{
   display: inline-block;
 }
